@@ -1,0 +1,20 @@
+<div class="row mt-5 mb-5">
+    <div class="col-md-4 m-auto">
+        <%- include('./partials/errors.ejs') %>
+        <div class="card card-body">
+                <div class="col ">
+                    <div class="card h-100 mt-2" >
+                    <img src="/uploads/<%= user.image %> " class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 >Name: <%= user.name %> </h6>
+                        <h6>Email: <%= user.email %> </h6>
+                        <h6>Phone: <%= user.phone %> </h6>
+                        <h6>Profession: <%= user.profession %> </h6>
+                    </div>
+                    </div>
+                </div>
+                <a href="/update/<%= user.id %> " class="btn btn-info form-control mt-2">Edit Data</a>
+                <a href="/delete/<%= user.id %> " class="btn btn-danger form-control mt-2">Delete Data</a>
+        </div>
+    </div>
+</div>
